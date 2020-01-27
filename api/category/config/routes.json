@@ -2,6 +2,14 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/categories/zenge",
+      "handler": "category.zenge",
+      "config":{
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/categories",
       "handler": "category.find",
       "config": {
@@ -45,6 +53,14 @@
       "path": "/categories/:id",
       "handler": "category.delete",
       "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/categories/zenge",
+      "handler": "category.zenge",
+      "config":{
         "policies": []
       }
     }
